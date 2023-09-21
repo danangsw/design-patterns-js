@@ -1,6 +1,6 @@
 class Settings {
     static instance: Settings;
-    public readonly mode = 'dark';
+    mode = 'dark';
 
     // prevent new with private constructor
     private constructor() {
@@ -16,6 +16,9 @@ class Settings {
     }
 }
 
-const setting = Settings.getInstance();
-
-console.log(setting);
+const settingSingleton = Settings.getInstance();
+const settingSingleton2 = Settings.getInstance();
+// const settingNew = new Settings();
+settingSingleton.mode = 'dark';
+settingSingleton2.mode = 'light';
+console.log({settingSingleton, settingSingleton2});

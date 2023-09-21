@@ -1,6 +1,10 @@
 {
+    "extends": "@tsconfig/node12/tsconfig.json",
     "compilerOptions": {
-      "outDir": "./dist",
-      "rootDir": "./"
-    }
+      "preserveConstEnums": true,
+      "target": "ES5",
+      "experimentalDecorators": true
+    },
+    "include": ["src/**/*"],
+    "exclude": ["**/*.spec.ts"]
   }

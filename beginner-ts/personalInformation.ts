@@ -57,6 +57,12 @@ export class Person {
     private _firstName:string;
     private _lastName:string;
 
+    constructor() {
+        this._age = 0;
+        this._firstName = '';
+        this._lastName = '';
+    }
+
     get age() {
         return this._age;
     }
