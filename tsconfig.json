@@ -4,7 +4,5 @@
       "preserveConstEnums": true,
       "target": "ES5",
       "experimentalDecorators": true
-    },
-    "include": ["src/**/*"],
-    "exclude": ["**/*.spec.ts"]
-  }
+    }
+}
