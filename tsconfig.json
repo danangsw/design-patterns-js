@@ -3,6 +3,7 @@
     "compilerOptions": {
       "preserveConstEnums": true,
       "target": "ES5",
-      "experimentalDecorators": true
+      "experimentalDecorators": true,
+      "strictPropertyInitialization": false
     }
 }
